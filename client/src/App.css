@@ -1,39 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 14px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.randomUser {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: solid 1px #e0e0e0;
+  width: 20%;
+  height: 400px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: #eeeeee;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.profilePic {
+  border-radius: 50%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.userInfo {
+  width: 100%;
+  margin-top: 50px;
+  border-top: solid 1px #e0e0e0;
+  border-bottom: solid 1px #e0e0e0;
+}
+.userInfo span {
+  font-weight: bold;
+}
+.userName {
+  padding: 10px;
+}
+.userEmail {
+  padding: 10px;
+}
+.userPhone {
+  padding: 10px;
+}
+.inviteBtns {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.goingBtn {
+  height: 40px;
+  width: 60px;
+  background: #67ac5b;
+  margin-top: 15px;
+  border: none;
+}
+.notGoingBtn {
+  height: 40px;
+  width: 60px;
+  background: #e25241;
+  margin-top: 15px;
+  border: none;
+}
+
+.isGoingHeader h1 {
+  position: relative;
+  top: 15px;
+  left: 90px;
+}
+
+.isGoingBody {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 8%;
+}
+
+.goingUser {
+  width: 90%;
+  margin: 10px;
+  background: lightgray;
+}
+
+.goingImg {
+  position: relative;
+  top: 25px;
+  left: 45px;
+  border-radius: 50%;
 }
